@@ -1,0 +1,300 @@
+body{
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+header, .search-main{
+    background-color: #161c68 !important;
+    padding: 0;
+}
+.pagelist-header header, .pagelist-header .search-main{
+    background-color: transparent !important;
+}
+.home .pagelist-header, .pagelist-header header{
+    /* background: rgb(16, 20, 93);
+    background: -moz-linear-gradient(120deg, rgba(16,20,91,1) 0%, rgba(24,88,158,1) 100%);
+    background: -webkit-linear-gradient(120deg, rgba(16,20,91,1) 0%, rgba(24,88,158,1) 100%);
+    background: linear-gradient(120deg, rgba(16,20,91,1) 0%, rgba(24,88,158,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#10145b",endColorstr="#18589e",GradientType=1); */
+    background: #182178 url('./images/imgpsh_fullsize_anim.jpg');
+    background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+    .home .pagelist-header{
+        background: rgb(24,88,158);
+        background: -moz-linear-gradient(180deg, rgba(24,88,158,1) 0%, rgba(16,20,91,1) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(24,88,158,1) 0%, rgba(16,20,91,1) 100%);
+        background: linear-gradient(180deg, rgba(24,88,158,1) 0%, rgba(16,20,91,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#18589e",endColorstr="#10145b",GradientType=1);
+    }
+}
+
+.home .pagelist-header .fixed{
+    position: fixed;
+    width: 100%;
+}
+.search-main{
+    padding: 60px 0 100px;
+}
+.search-main h1{
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0 0;
+}
+.search-main form{
+    margin: 44px auto 0 auto;
+    width: 520px;
+}
+.search-main form .MuiInput-root{
+    background-color: #ffffff;
+    border:1px solid #e6e6e6;
+    border-radius: 8px;
+    width: 520px;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 23px;
+
+}
+.search-main form .MuiInput-root::before,
+.search-main form .MuiInput-root::after,
+.search-main form .MuiInput-root:not(.Mui-disabled)::before{
+    border: none;
+}
+.search-main form .MuiSvgIcon-root{
+    font-size: 36px;
+    color: #808B95;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.left-cont ul{
+    list-style: disc;
+    margin: 0 0 30px 20px;
+}
+.top-right {
+    text-align: right;
+    padding: 14px 0 0;
+}
+.top-right a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.top-right .reqst-quote {
+    margin: 0;
+    padding: 12px 30px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: #212529;
+    background: #ffd03f;
+    border-radius: 6px;
+    float: right;
+}
+.reqst-quote {
+    border-radius: 3px;
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, var(--c1, #19a5a0), var(--c2, #23c8c3) 51%, var(--c1, #19a5a0)) var(--x, 0) / 200%;
+}
+.reqst-quote .MuiSvgIcon-root {
+	display: inline-block;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+    font-size: 17px;
+    transition: all .5s ease;
+}
+.reqst-quote:hover .MuiSvgIcon-root{
+    transition: all .5s ease;
+    transform: translateX(5px);
+}
+.reqst-quote:hover {
+    text-decoration: underline;
+}
+.navbar{
+    padding: 0px;
+}
+.navbar-expand-lg .navbar-collapse {
+	padding-top: 25px;
+    padding-left: 7%;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0px 25px 28px 0;
+    transition: all .3s ease-in-out;
+}
+.dropdown-toggle::after {
+	content: inherit;
+}
+.dropdown-menu{
+	box-shadow: none;
+	background: rgba(57,60,173,.95);
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 325px;
+	z-index: 99;
+	padding: 12px 5px 20px;
+	transition: all .3s ease-in-out;
+	border: none;
+	border-radius: 0;
+}
+.dropdown-menu[data-bs-popper] {
+	margin-top: 0;
+}
+.dropdown-menu .dropdown-item{
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 9px 15px;
+    transition: .5s;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #f66403;
+    background: none;
+    padding-left: 25px;
+    transition: .5s;
+}
+nav .navbar-nav .nav-item:last-child a {
+	padding-right: 0;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+	top: 100%;
+}
+.nav-item.dropdown:last-child .dropdown-menu {
+	left: auto;
+	right: 0;
+}
+.navbar-light .navbar-brand{
+    margin: 0;
+    padding: 0;
+}
+.navbar-light .navbar-brand img{
+    width: 300px;
+}
+
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+
+@media screen and (max-width:1650px) and (min-width:1320px) {
+.navbar-light .navbar-brand {
+        width: 24%;
+    }
+.App-logo img {
+        width: 100%;
+    }
+.navbar-expand-lg .navbar-collapse {
+        padding-left: 3%;
+        width: 76%;
+    }
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+        padding:0px 20px 28px 0;
+        font-size: 14px;
+}
+.top-right .reqst-quote {
+	margin: 4px 0 0 0;
+	padding: 10px 17px;
+	font-size: 13px;
+}
+.footer-nav.four .footer-btns a.bttn {
+	font-size: 12px;
+}
+.navbar-light .navbar-brand img {
+	width: 270px;
+}
+}
+
+
+@media screen and (max-width:1319px) and (min-width:992px) {
+.navbar-expand-lg .navbar-collapse {
+    padding-top: 25px;
+    padding-left: 0;
+    position: absolute;
+    top: 90%;
+}
+.navbar {
+    padding: 18px 0;
+}
+.navbar-light .navbar-nav .nav-link, 
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+    font-size: 14px;
+}
+header {
+	min-height: 155px;
+}
+.home .breadcrumb-main {
+    padding-top: 80px;
+}
+}
+
+@media (max-width: 991px) {
+    .search-main h1{
+        font-size: 2.1rem;
+    }
+    .search-main form {
+        margin: 30px auto 0 auto;
+        width: 100%;
+    }
+    .search-main {
+        padding: 10px 0 60px;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url('./images/menu-icon.png');
+    }
+    .navbar-light .navbar-toggler,
+    .navbar-light .navbar-toggler:hover,
+    .navbar-light .navbar-toggler:focus{
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+    .navbar-light .navbar-brand img {
+        width: 280px;
+        height: 55px;
+    }
+      .main-nav {
+        padding: 10px 0;
+    }
+    .dropdown {
+        left: 0;
+        top: 0;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        background: rgba(57,60,173,.95);
+        padding: 30px 28px 20px;
+        margin: 20px 0 0 0;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        padding: 0px 25px 15px 0;
+    }
+    .navbar-nav .show.dropdown .nav-link{
+        padding-bottom: 0;
+    }
+    .navbar-nav .dropdown-menu {
+        width: 100%;
+    }
+    .search-main form .MuiInput-root{
+        width: 100%;
+    }
+}
