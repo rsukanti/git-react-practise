@@ -1,2 +1,3 @@
-
-<title>fdskfdsf</title>
+alert{
+    "Hello";
+}
